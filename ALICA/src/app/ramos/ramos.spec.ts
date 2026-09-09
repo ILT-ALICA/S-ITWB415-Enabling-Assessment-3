@@ -24,6 +24,12 @@ describe('Ramos', () => {
   });
 
   it('should have valid image path', () => {
-    expect(component.imagePath()).toBe('assets/images/umandal.png');
+    expect(component.imagePath()).toBe('assets/images/ramos.png');
+  });
+
+  it('should update description on showDescription', () => {
+    expect(component.description()).toBe('');
+    component.showDescription();
+    expect(component.description()).toContain('web apps and full-stack');
   });
 });

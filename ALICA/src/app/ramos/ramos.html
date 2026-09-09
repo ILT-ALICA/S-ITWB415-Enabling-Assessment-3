@@ -5,4 +5,13 @@
     class="profile-image"
     [src]="imagePath()"
     [alt]="name()" />
+
+    <button
+    type="button"
+    class="description-button"
+    (click)="showDescription()">
+    About Me
+  </button>
+
+  <p class="profile-description">{{ description() }}</p>
 </section>
