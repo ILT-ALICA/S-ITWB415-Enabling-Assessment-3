@@ -1,0 +1,17 @@
+<section class="profile-card" id="ramos_profile">
+  <h2>{{ name() }}</h2>
+
+   <img
+    class="profile-image"
+    [src]="imagePath()"
+    [alt]="name()" />
+
+    <button
+    mat-raised-button
+    class="description-button"
+    (click)="showDescription()">
+    About Me
+  </button>
+
+  <p class="profile-description">{{ description() }}</p>
+</section>
