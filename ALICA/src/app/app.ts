@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { Ramos } from './ramos/ramos';
 import { Umandal } from './umandal/umandal';
+import { Martin } from './martin/martin';
 
 @Component({
-  imports: [Ramos, Umandal],
+  imports: [Ramos, Umandal, Martin],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
