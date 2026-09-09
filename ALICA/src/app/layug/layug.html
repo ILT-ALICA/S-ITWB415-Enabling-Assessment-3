@@ -1,13 +1,13 @@
-<section>
+<section class="profile-card" id="layug_profile">
 
-    <h2>{{ name }}</h2>
+    <h2>{{ name() }}</h2>
 
-    <img [src]="imagePath" alt="Charlz Edison Layug" class="profile-image">
+    <img [src]="imagePath()" alt="name()" class="profile-image">
 
     <br>
 
-    <button (click)="showDescription()">About Me</button>
+    <button mat-raised-button class="description-button" (click)="showDescription()">About Me</button>
 
-    <p>{{ description() }}</p>
+    <p class="profile-description">{{ description() }}</p>
 
 </section>

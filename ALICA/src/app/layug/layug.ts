@@ -1,16 +1,17 @@
 import { Component, signal } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  imports: [],
+  imports: [MatButtonModule],
   selector: 'app-layug',
   styleUrl: './layug.scss',
   templateUrl: './layug.html',
 })
 export class Layug {
 
-  name = 'Charlz Edison Layug';
+  name = signal('Charlz Edison Layug');
 
-  imagePath = 'assets/images/layug.jpg';
+  imagePath = signal('assets/images/layug.jpg');
 
   description = signal('');
 
