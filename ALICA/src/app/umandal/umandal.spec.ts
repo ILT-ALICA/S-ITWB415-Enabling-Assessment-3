@@ -26,4 +26,10 @@ describe('Umandal', () => {
   it('should have valid image path', () => {
     expect(component.imagePath()).toBe('assets/images/umandal.png');
   });
+
+  it('should update description on showDescription', () => {
+    expect(component.description()).toBe('');
+    component.showDescription();
+    expect(component.description()).toContain('web and full-stack');
+  });
 });
