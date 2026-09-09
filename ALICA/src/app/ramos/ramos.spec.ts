@@ -30,6 +30,6 @@ describe('Ramos', () => {
   it('should update description on showDescription', () => {
     expect(component.description()).toBe('');
     component.showDescription();
-    expect(component.description()).toContain('web apps and full-stack');
+    expect(component.description()).toContain('functional web apps');
   });
 });
