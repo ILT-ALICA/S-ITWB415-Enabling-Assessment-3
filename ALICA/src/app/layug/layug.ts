@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './layug.scss',
   templateUrl: './layug.html',
 })
-export class Layug {}
+export class Layug {
+
+  name = 'Charlz Edison Layug';
+
+}
