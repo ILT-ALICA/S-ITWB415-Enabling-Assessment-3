@@ -18,4 +18,18 @@ describe('Padolina', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should display the name', () => {
+    expect(component.name()).toBe('Ian Charles Padolina');
+  });
+
+  it('should have valid image path', () => {
+    expect(component.imagePath()).toBe('assets/images/padolina.png');
+  });
+
+  it('should update description on showDescription', () => {
+    expect(component.description()).toBe('');
+    component.showDescription();
+    expect(component.description()).toContain('graphic design');
+  });
 });
