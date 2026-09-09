@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { Ramos } from './ramos/ramos';
+import { Umandal } from './umandal/umandal';
 
 @Component({
-  imports: [Ramos],
+  imports: [Ramos, Umandal],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
