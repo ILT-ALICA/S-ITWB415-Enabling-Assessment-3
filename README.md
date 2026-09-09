@@ -12,4 +12,4 @@
 
 ## Static Deployment
 
-[Deployment Link](#)
+[Deployment Link](https://ilt-alica.github.io/S-ITWB415-Enabling-Assessment-3/)
