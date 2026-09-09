@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   imports: [],
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './martin.scss',
   templateUrl: './martin.html',
 })
-export class Martin {}
+export class Martin {
+  name = signal('Aiven Allyson Martin');
+}
