@@ -1,12 +1,17 @@
-<h2>{{ name() }}</h2>
+<section class="profile-card" id="padolina_profile">
+  <h2>{{ name() }}</h2>
 
-<img
+   <img
     class="profile-image"
     [src]="imagePath()"
     [alt]="name()" />
 
-    <button type="button" mat-raised-button (click)="showDescription()">
+    <button
+    mat-raised-button
+    class="description-button"
+    (click)="showDescription()">
     About Me
   </button>
 
-  <p>{{ description() }}</p>
+  <p class="profile-description">{{ description() }}</p>
+</section>

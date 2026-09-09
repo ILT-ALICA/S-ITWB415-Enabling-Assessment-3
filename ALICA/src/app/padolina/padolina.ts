@@ -9,7 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class Padolina {
   name = signal('Ian Charles Padolina');
-  imagePath = signal('assets/images/padolina.jpg');
+  imagePath = signal('assets/images/padolina.png');
   description = signal('');
 
   showDescription() {
