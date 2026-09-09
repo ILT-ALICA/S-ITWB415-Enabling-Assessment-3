@@ -10,4 +10,6 @@ export class Layug {
 
   name = 'Charlz Edison Layug';
 
+  imagePath = 'assets/images/layug.jpg';
+
 }
