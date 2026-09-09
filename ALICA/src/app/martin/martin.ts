@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
-
+import { MatButtonModule } from '@angular/material/button';
 @Component({
-  imports: [],
+  imports: [MatButtonModule],
   selector: 'app-martin',
   styleUrl: './martin.scss',
   templateUrl: './martin.html',
