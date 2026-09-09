@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   imports: [],
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './padolina.scss',
   templateUrl: './padolina.html',
 })
-export class Padolina {}
+export class Padolina {
+  name = signal('Ian Charles Padolina');
+}
