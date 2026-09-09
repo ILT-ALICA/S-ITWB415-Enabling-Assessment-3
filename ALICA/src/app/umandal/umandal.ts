@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   imports: [],
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './umandal.scss',
   templateUrl: './umandal.html',
 })
-export class Umandal {}
+export class Umandal {
+  name = signal('Alen Mikel Umandal');
+}

@@ -18,4 +18,8 @@ describe('Umandal', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should display the name', () => {
+    expect(component.name()).toBe('Alen Mikel Umandal');
+  });
 });
