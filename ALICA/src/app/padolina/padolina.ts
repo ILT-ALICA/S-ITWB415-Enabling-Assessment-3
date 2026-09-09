@@ -1,7 +1,8 @@
 import { Component, signal } from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
-  imports: [],
+  imports: [MatButtonModule],
   selector: 'app-padolina',
   styleUrl: './padolina.scss',
   templateUrl: './padolina.html',
