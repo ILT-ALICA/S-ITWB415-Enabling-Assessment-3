@@ -22,4 +22,8 @@ describe('Ramos', () => {
   it('should display the name', () => {
     expect(component.name()).toBe('Lenard Kristan A. Ramos');
   });
+
+  it('should have valid image path', () => {
+    expect(component.imagePath()).toBe('assets/images/umandal.png');
+  });
 });
