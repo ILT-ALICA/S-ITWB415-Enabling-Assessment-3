@@ -15,7 +15,8 @@ export class Padolina {
   showDescription() {
     this.description.set(
       'I am an Information Technology student at DLSU-D who enjoys graphic ' +
-      'design, content creation, competitive running, and student organizations.',
+      'design, content creation, competitive running, and ' +
+      'student organizations.',
     );
   }
 }
