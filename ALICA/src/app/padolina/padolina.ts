@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   imports: [MatButtonModule],
@@ -13,7 +13,9 @@ export class Padolina {
   description = signal('');
 
   showDescription() {
-    this.description.set('I am an Information Technology student at DLSU-D who enjoys graphic design, content creation, and competitive running. I am also active in student organizations like Lasallian Student Ambassadors and Samahang Lasalyano.');
+    this.description.set(
+      'I am an Information Technology student at DLSU-D who enjoys graphic ' +
+      'design, content creation, competitive running, and student organizations.',
+    );
   }
-
 }
