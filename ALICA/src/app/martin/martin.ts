@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+
 @Component({
   imports: [MatButtonModule],
   selector: 'app-martin',
@@ -8,14 +9,13 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class Martin {
   name = signal('Aiven Allyson Martin');
-
   imagePath = signal('assets/images/martin.png');
-
   description = signal('');
 
-showDescription() {
-  this.description.set(
-    'I am an Information Technology student who enjoys learning about web development and creating practical applications using modern technologies.'
-  );
-}
+  showDescription(): void {
+    this.description.set(
+      'I am an Information Technology student who enjoys learning about ' +
+      'web development and practical applications.',
+    );
+  }
 }

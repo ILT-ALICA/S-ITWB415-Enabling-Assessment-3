@@ -1,13 +1,17 @@
 <section class="profile-card" id="layug_profile">
+  <h2>{{ name() }}</h2>
 
-    <h2>{{ name() }}</h2>
+  <img
+    class="profile-image"
+    [src]="imagePath()"
+    [alt]="name()" />
 
-    <img [src]="imagePath()" [alt]="name()" class="profile-image">
+  <button
+    mat-raised-button
+    class="description-button"
+    (click)="showDescription()">
+    About Me
+  </button>
 
-    <br>
-
-    <button mat-raised-button class="description-button" (click)="showDescription()">About Me</button>
-
-    <p class="profile-description">{{ description() }}</p>
-
+  <p class="profile-description">{{ description() }}</p>
 </section>
