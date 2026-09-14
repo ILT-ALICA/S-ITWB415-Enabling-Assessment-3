@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
+import { MemberPreview } from '../shared/member-preview/member-preview';
 
 @Component({
-  imports: [MatButtonModule],
+  imports: [MemberPreview],
   selector: 'app-martin',
   styleUrl: './martin.scss',
   templateUrl: './martin.html',
@@ -10,12 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 export class Martin {
   name = signal('Aiven Allyson Martin');
   imagePath = signal('assets/images/martin.png');
-  description = signal('');
-
-  showDescription(): void {
-    this.description.set(
-      'I am an Information Technology student who enjoys learning about ' +
-      'web development and practical applications.',
-    );
-  }
+  description = signal(
+    'I am an Information Technology student who enjoys learning about web development and creating practical applications using modern technologies.'
+  );
 }
