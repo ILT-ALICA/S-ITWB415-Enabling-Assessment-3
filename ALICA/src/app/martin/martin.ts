@@ -14,3 +14,4 @@ export class Martin {
     'I am an Information Technology student who enjoys learning about web development and creating practical applications using modern technologies.'
   );
 }
+
