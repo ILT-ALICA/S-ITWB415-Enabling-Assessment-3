@@ -10,8 +10,10 @@ import { MemberPreview } from '../shared/member-preview/member-preview';
 export class Martin {
   name = signal('Aiven Allyson Martin');
   imagePath = signal('assets/images/martin.png');
-  description = signal(
-    'I am an Information Technology student who enjoys learning about web development and creating practical applications using modern technologies.'
+    description = signal(
+    'I am an Information Technology student who enjoys learning about web '
+    + 'development and creating practical applications using modern '
+    + 'technologies.'
   );
 }
 
