@@ -1,8 +1,7 @@
 import { Component, signal } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
 import { MemberPreview } from '../shared/member-preview/member-preview';
 @Component({
-  imports: [MatButtonModule, MemberPreview],
+  imports: [MemberPreview],
   selector: 'app-ramos',
   styleUrl: './ramos.scss',
   templateUrl: './ramos.html',
