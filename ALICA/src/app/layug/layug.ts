@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
+import { MemberPreview } from '../shared/member-preview/member-preview';
 
 @Component({
-  imports: [MatButtonModule],
+  imports: [MemberPreview],
   selector: 'app-layug',
   styleUrl: './layug.scss',
   templateUrl: './layug.html',
@@ -10,12 +10,8 @@ import { MatButtonModule } from '@angular/material/button';
 export class Layug {
   name = signal('Charlz Edison Layug');
   imagePath = signal('assets/images/layug.jpg');
-  description = signal('');
-
-  showDescription() {
-    this.description.set(
-      'I am an IT student interested in programming, web development, ' +
-      'and doing creative works.',
-    );
-  }
+  description = signal(      
+    'I am an IT student interested in programming, web development, ' +
+    'and doing creative works.'
+  );
 }
