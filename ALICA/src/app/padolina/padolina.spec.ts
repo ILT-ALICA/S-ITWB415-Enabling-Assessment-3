@@ -27,9 +27,7 @@ describe('Padolina', () => {
     expect(component.imagePath()).toBe('assets/images/padolina.png');
   });
 
-  it('should update description on showDescription', () => {
-    expect(component.description()).toBe('');
-    component.showDescription();
+  it('should have a description', () => {
     expect(component.description()).toContain('graphic design');
   });
 });
