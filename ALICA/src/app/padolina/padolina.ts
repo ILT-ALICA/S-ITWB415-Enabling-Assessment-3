@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
+import { MemberPreview } from '../shared/member-preview/member-preview';
 
 @Component({
-  imports: [MatButtonModule],
+  imports: [MemberPreview],
   selector: 'app-padolina',
   styleUrl: './padolina.scss',
   templateUrl: './padolina.html',
@@ -10,13 +10,9 @@ import { MatButtonModule } from '@angular/material/button';
 export class Padolina {
   name = signal('Ian Charles Padolina');
   imagePath = signal('assets/images/padolina.png');
-  description = signal('');
-
-  showDescription() {
-    this.description.set(
-      'I am an Information Technology student at DLSU-D who enjoys graphic ' +
-      'design, content creation, competitive running, and ' +
-      'student organizations.',
-    );
-  }
+  description = signal(
+    'I am an Information Technology student at DLSU-D who enjoys graphic ' +
+    'design, content creation, competitive running, and ' +
+    'student organizations.',
+  );
 }
