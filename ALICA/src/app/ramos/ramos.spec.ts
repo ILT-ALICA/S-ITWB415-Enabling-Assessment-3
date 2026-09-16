@@ -27,9 +27,13 @@ describe('Ramos', () => {
     expect(component.imagePath()).toBe('assets/images/ramos.png');
   });
 
-  it('should update description on showDescription', () => {
-    expect(component.description()).toBe('');
-    component.showDescription();
+    it('should have valid description', () => {
     expect(component.description()).toContain('functional web apps');
+  });
+
+  it('should render the member preview component', () => {
+    const previewElement =
+      fixture.nativeElement.querySelector('app-member-preview');
+    expect(previewElement).toBeTruthy();
   });
 });
